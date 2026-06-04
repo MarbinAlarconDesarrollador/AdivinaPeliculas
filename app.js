@@ -53,7 +53,7 @@ const SoundEngine = {
 };
 
 const movies = [
-     { title: "Titanic", cat: "Drama / Romance" },
+  { title: "Titanic", cat: "Drama / Romance / Nombre en ingles" },
   { title: "El Exorcista", cat: "Terror" },
   { title: "Gladiador", cat: "Acción / Historia" },
   { title: "Volver al Futuro", cat: "Ciencia Ficción" },
@@ -93,26 +93,29 @@ const movies = [
   { title: "Duro de Matar", cat: "Acción / Thriller" },
   { title: "El Puente de los Espías", cat: "Thriller / Histórico" },
   { title: "Troya", cat: "Acción / Histórico" },
-  { title: "300", cat: "Acción / Histórico" },
   { title: "Corazón Valiente", cat: "Acción / Histórico / Drama" },
   { title: "El Patriota", cat: "Acción / Histórico / Drama" },
   { title: "Rescatando al Soldado Ryan", cat: "Acción / Bélico / Drama" },
   { title: "La Delgada Línea Roja", cat: "Bélico / Drama" },
   { title: "El Francotirador Americano", cat: "Acción / Bélico / Drama" },
+  { title: "Rápidos y Furiosos", cat: "Acción / Aventura" },
+  { title: "Mortal Kombat", cat: "Acción / Fantasía / Nombre en ingles" },
+  { title: "Karate Kid", cat: "Drama / Acción / Deportes / Nombre en ingles" },
+  { title: "Rocky", cat: "Drama / Deportes / Nombre en ingles" },
 
   // Ciencia Ficción
-  { title: "Matrix", cat: "Ciencia Ficción / Acción" },
+  { title: "Matrix", cat: "Ciencia Ficción / Acción / Nombre en ingles" },
   { title: "Interestelar", cat: "Ciencia Ficción / Drama" },
   { title: "Cazador de Androides 2049", cat: "Ciencia Ficción / Thriller" },
   { title: "Duna", cat: "Ciencia Ficción / Aventura" },
   { title: "Gravedad", cat: "Ciencia Ficción / Drama" },
   { title: "La Llegada", cat: "Ciencia Ficción / Drama" },
-  { title: "Informe Minoritario", cat: "Ciencia Ficción / Thriller" },
   { title: "El Origen", cat: "Ciencia Ficción / Thriller" },
   { title: "El Quinto Elemento", cat: "Ciencia Ficción / Acción" },
   { title: "Señales", cat: "Ciencia Ficción / Terror" },
   { title: "La Guerra de los Mundos", cat: "Ciencia Ficción / Acción" },
   { title: "Yo, Robot", cat: "Ciencia Ficción / Acción" },
+  { title: "El Show de Truman", cat: "Drama / Ciencia Ficción" },
 
   // Terror / Suspenso
   { title: "Eso: Capítulo 1", cat: "Terror" },
@@ -125,32 +128,29 @@ const movies = [
   { title: "Los Otros", cat: "Terror / Suspenso" },
   { title: "El Sexto Sentido", cat: "Terror / Suspenso" },
   { title: "La Profecía", cat: "Terror" },
-  { title: "Pesadilla en Elm Street", cat: "Terror" },
   { title: "Viernes 13", cat: "Terror" },
   { title: "La Noche de Halloween", cat: "Terror" },
   { title: "Sé lo que Hicisteis el Último Verano", cat: "Terror / Suspenso" },
   { title: "La Celda", cat: "Terror / Thriller" },
   { title: "El Juego del Miedo", cat: "Terror / Thriller" },
+  { title: "El Exorcismo de Emily Rose", cat: "Terror / Drama" },
+  { title: "La Llorona", cat: "Terror / Colombia" },
 
   // Drama
   { title: "El Padrino", cat: "Drama / Crimen" },
-  { title: "La Lista de Schindler", cat: "Drama / Histórico" },
   { title: "Belleza Americana", cat: "Drama" },
   { title: "Luz de Luna", cat: "Drama" },
   { title: "12 Años de Esclavitud", cat: "Drama / Histórico" },
   { title: "Hacia Rutas Salvajes", cat: "Drama / Aventura" },
   { title: "El Club de los Poetas Muertos", cat: "Drama" },
   { title: "Con los Ojos Bien Abiertos", cat: "Drama / Psicológico" },
-  { title: "Mil Soles Espléndidos", cat: "Drama / Histórico" },
   { title: "El Curioso Caso de Benjamin Button", cat: "Drama / Romance" },
   { title: "Las Horas", cat: "Drama" },
-  { title: "21 Gramos", cat: "Drama / Suspenso" },
   { title: "Amores Perros", cat: "Drama / Crimen" },
-  { title: "El Árbol de la Vida", cat: "Drama" },
-  { title: "El Gran Hotel Budapest", cat: "Drama / Comedia" },
   { title: "El Luchador", cat: "Drama / Deportes" },
-  { title: "Cuando éramos Reyes", cat: "Documental / Deportes" },
   { title: "Corredor de Fondo", cat: "Drama / Deportes" },
+  { title: "Una Mente Brillante", cat: "Drama / Biográfico" },
+  { title: "El Náufrago", cat: "Drama / Aventura" },
 
   // Comedia
   { title: "Super Malos", cat: "Comedia" },
@@ -163,29 +163,43 @@ const movies = [
   { title: "La Máscara", cat: "Comedia / Fantasía" },
   { title: "Mi Pobre Angelito", cat: "Comedia / Familiar" },
   { title: "Los Cazafantasmas", cat: "Comedia / Fantasía" },
-  { title: "Una Mente Brillante", cat: "Drama / Biográfico" },
-  { title: "El Náufrago", cat: "Drama / Aventura" },
   { title: "Casi Famosos", cat: "Drama / Comedia / Música" },
   { title: "Alta Fidelidad", cat: "Comedia / Romance / Música" },
+  { title: "El Gran Lebowski", cat: "Comedia / Crimen" },
+  { title: "Ace Ventura", cat: "Comedia" },
+  { title: "Una Noche en el Museo", cat: "Comedia / Aventura / Familiar" },
+  { title: "La Boda de mi Mejor Amigo", cat: "Comedia Romántica" },
 
   // Musical
   { title: "Mamma Mia", cat: "Musical / Comedia Romántica" },
   { title: "El Rey del Rock", cat: "Musical / Biográfico / Drama" },
-  { title: "Calle 54", cat: "Documental / Musical" },
 
-  // Animación adicional
+  // Animación
   { title: "Encanto", cat: "Animación / Familiar / Colombia" },
-  { title: "Arriba o Up", cat: "Animación / Aventura / Drama" },
+  { title: "Arriba o Up", cat: "Animación / Aventura / Drama / nombre en ingles o Español" },
   { title: "Buscando a Nemo", cat: "Animación / Aventura / Familiar" },
   { title: "Zootopia", cat: "Animación / Aventura / Comedia" },
   { title: "Kung Fu Panda", cat: "Animación / Acción / Comedia" },
   { title: "Cómo Entrenar a tu Dragón", cat: "Animación / Aventura / Familiar" },
   { title: "La Bella y la Bestia", cat: "Animación / Musical / Romance" },
+  { title: "Shrek", cat: "Animación / Comedia / Fantasía" },
+  { title: "Shrek 2", cat: "Animación / Comedia / Fantasía" },
+  { title: "El Gato con Botas: El Último Deseo", cat: "Animación / Aventura / Comedia" },
+  { title: "Moana", cat: "Animación / Aventura / Familiar" },
+  { title: "Frozen", cat: "Animación / Musical / Familiar" },
+  { title: "Ratatouille", cat: "Animación / Comedia / Familiar / nombre en ingles" },
+  { title: "Toy Story", cat: "Animación / Aventura / Familiar / nombre en ingles" },
+  { title: "Megamente", cat: "Animación / Acción / Comedia" },
 
   // Superhéroes
   { title: "El Hombre Araña: Un Nuevo Universo", cat: "Animación / Superhéroes / Acción" },
   { title: "Guardianes de la Galaxia", cat: "Acción / Superhéroes / Comedia" },
   { title: "Pantera Negra", cat: "Acción / Superhéroes / Drama" },
+  { title: "Spider-Man: Sin Camino a Casa", cat: "Acción / Superhéroes" },
+  { title: "Avengers: Endgame", cat: "Acción / Superhéroes / nombre en ingles" },
+  { title: "Thor: Ragnarok", cat: "Acción / Superhéroes / Comedia / nombre en ingles" },
+  { title: "Ant-Man", cat: "Acción / Superhéroes / Comedia / nombre en ingles" },
+  { title: "Black Panther", cat: "Acción / Superhéroes / nombre en ingles" },
 
   // Colombianas
   { title: "La Estrategia del Caracol", cat: "Comedia / Drama / Colombia" },
@@ -200,7 +214,7 @@ const movies = [
   { title: "Tierra en la Lengua", cat: "Drama / Colombia" },
   { title: "Los Hongos", cat: "Drama / Colombia" },
   { title: "Ruido Rosa", cat: "Drama / Colombia" },
-  { title: "La Defensa del Dragón", cat: "Drama / Fantasia / Colombia" },
+  { title: "La Defensa del Dragón", cat: "Drama / Fantasía / Colombia" },
   { title: "Pequeñas Voces", cat: "Animación / Drama / Colombia" },
   { title: "Ana de Nadie", cat: "Drama / Romance / Colombia" },
   { title: "La Toma", cat: "Documental / Colombia" },
@@ -208,7 +222,14 @@ const movies = [
   { title: "Manos Sucias", cat: "Drama / Crimen / Colombia" },
   { title: "Gente de Bien", cat: "Drama / Colombia" },
   { title: "El Problema del Mal", cat: "Drama / Suspenso / Colombia" },
+  { title: "Los Reyes del Mundo", cat: "Drama / Colombia" },
+  { title: "Candelaria", cat: "Drama / Colombia" },
+  { title: "Siembra", cat: "Drama / Colombia" },
+  { title: "Amparo", cat: "Drama / Colombia" },
+  { title: "Monos", cat: "Drama / Aventura / Colombia" },
+  { title: "Cuando éramos Reyes", cat: "Documental / Deportes" },
 ];
+
 
 let available = [...movies];
 let scores = { 1: 0, 2: 0 };
@@ -326,20 +347,20 @@ function addPoint(team) {
     // 2. LANZAR CONFETI
     const colors = team === 1 ? ['#3498db', '#ffffff'] : ['#f1c40f', '#ffffff'];
 
-     confetti({
+    confetti({
         particleCount: 600,
         spread: 70,
         origin: { x: 0, y: 1 },
         colors: colors,
-        zIndex: 2000 
+        zIndex: 2000
     });
-   
+
     confetti({
         particleCount: 300,
         spread: 70,
         origin: { x: 0.5, y: 0.6 },
         colors: colors,
-        zIndex: 2000 
+        zIndex: 2000
     });
 
     confetti({
@@ -347,7 +368,7 @@ function addPoint(team) {
         spread: 70,
         origin: { x: 1, y: 1 },
         colors: colors,
-        zIndex: 2000 
+        zIndex: 2000
     });
 
     // 3. Sumar el punto y cambiar de turno
