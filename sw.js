@@ -2,7 +2,9 @@ const CACHE_NAME = 'cineruleta-v1';
 const ASSETS = [
   './',
   './index.html',
-  './manifest.json'
+  './styles.css',
+  './app.js',
+  'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js'
 ];
 
 // Instalar y guardar en caché
